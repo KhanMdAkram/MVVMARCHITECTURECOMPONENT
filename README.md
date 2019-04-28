@@ -1,4 +1,4 @@
-# MVVMARCHITECTURECOMPONENT
+# MVVM ARCHITECTURE COMPONENT
 Sample Andoridapp  using MVVM Design Pattern ,RX Java,Mutable Live Data Retrofit being used to serve a RecyclerView view which has image thumbnails in each list item.
 User can see a list of most viewed articles published on New York Times in the past 7 days.
 Click on refresh icon on top right corner to getb the latest New York Times most viewed articles .
