@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/rp_store_no_image"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:maxLines="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    tools:text="Delay, Deny and Deflect: How Facebook’s Leaders Fought Through Crisis" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    tools:text="By SHEERA FRENKEL, NICHOLAS CONFESS,KANG, MATTHEW ROSENBERG and JACK NICAS" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    tools:text="2018-11-14" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/forward_grey_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/header"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+</layout>
